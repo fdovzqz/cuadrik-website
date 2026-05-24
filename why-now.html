@@ -1,0 +1,327 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Why now — Cuadrik</title>
+<meta name="description" content="The investment thesis behind Cuadrik: a convergence of mature agentic AI and a vast, fragmented creative services market." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600&family=Geist:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="assets/site.css" />
+<style>
+  .pillars {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+    border: 1px solid var(--line);
+    background: var(--paper);
+  }
+  .pillars > div {
+    padding: clamp(28px, 3.5vw, 48px);
+    border-right: 1px solid var(--line-soft);
+    display: flex; flex-direction: column; gap: 16px;
+  }
+  .pillars > div:last-child { border-right: 0; }
+  @media (max-width: 800px) {
+    .pillars { grid-template-columns: 1fr; }
+    .pillars > div { border-right: 0; border-bottom: 1px solid var(--line-soft); }
+  }
+  .pillars .tag {
+    font-family: var(--mono); font-size: 11px; letter-spacing: 0.14em;
+    text-transform: uppercase; color: var(--accent);
+  }
+  .pillars h3 { font-family: var(--serif); font-size: clamp(24px, 2.4vw, 32px); }
+  .pillars p { color: var(--ink-soft); font-size: 15.5px; line-height: 1.6; margin: 0; }
+
+  .reasons { display: grid; gap: 0; border-top: 1px solid var(--line); }
+  .reason {
+    display: grid;
+    grid-template-columns: 60px 1fr 2fr;
+    gap: 32px;
+    padding: 36px 0;
+    border-bottom: 1px solid var(--line-soft);
+    align-items: baseline;
+  }
+  .reason .n { font-family: var(--mono); font-size: 12px; color: var(--accent); letter-spacing: 0.12em; padding-top: 4px; }
+  .reason h3 { font-family: var(--serif); font-size: 24px; font-weight: 400; }
+  .reason p { color: var(--ink-soft); font-size: 15.5px; line-height: 1.6; margin: 0; max-width: 60ch; }
+  @media (max-width: 880px) {
+    .reason { grid-template-columns: 1fr; gap: 12px; }
+  }
+
+  .principles {
+    border: 1px solid var(--line);
+    background: var(--paper);
+    padding: clamp(28px, 4vw, 56px);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+  }
+  @media (max-width: 760px) { .principles { grid-template-columns: 1fr; } }
+  .principle .tag { font-family: var(--mono); font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); }
+  .principle h4 { font-family: var(--serif); font-size: 22px; font-weight: 400; margin: 6px 0 8px; }
+  .principle p  { color: var(--ink-soft); font-size: 14.5px; line-height: 1.55; margin: 0; }
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav-inner">
+    <a class="brand" href="index.html" aria-label="Cuadrik home">
+      <span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span><span></span></span>
+      <span>Cuadrik</span>
+    </a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="index.html"><span data-i18n="en">Thesis</span><span data-i18n="es">Tesis</span></a>
+      <a href="model.html"><span data-i18n="en">The Model</span><span data-i18n="es">El modelo</span></a>
+      <a href="portfolio.html"><span data-i18n="en">Portfolio</span><span data-i18n="es">Portafolio</span></a>
+      <a href="why-now.html" aria-current="page"><span data-i18n="en">Why now</span><span data-i18n="es">Por qué ahora</span></a>
+      <a href="contact.html"><span data-i18n="en">Contact</span><span data-i18n="es">Contacto</span></a>
+    </nav>
+    <div class="nav-right">
+      <div class="lang" role="group" aria-label="Language">
+        <button data-lang="en" class="is-active">EN</button>
+        <button data-lang="es">ES</button>
+      </div>
+      <button class="nav-toggle btn ghost" aria-label="Menu">Menu</button>
+    </div>
+  </div>
+</header>
+
+<section class="page-head no-rule" data-screen-label="01 Head">
+  <div class="wrap">
+    <div class="crumbs"><a href="index.html">Cuadrik</a> / <span data-i18n="en">Why now</span><span data-i18n="es">Por qué ahora</span></div>
+    <div class="row-head" style="margin-bottom:0;">
+      <div class="label">
+        <div class="meta-side">
+          <div><span data-i18n="en">For</span><span data-i18n="es">Para</span></div>
+          <div><b><span data-i18n="en">Investors &amp; partners</span><span data-i18n="es">Inversionistas &amp; socios</span></b></div>
+          <div style="margin-top:12px;"><span data-i18n="en">Stage honesty</span><span data-i18n="es">Honestidad de etapa</span></div>
+          <div><b><span data-i18n="en">Early · thesis-led</span><span data-i18n="es">Etapa temprana · liderada por tesis</span></b></div>
+        </div>
+      </div>
+      <div>
+        <h1>
+          <span data-i18n="en">Why this model, and why this moment.</span>
+          <span data-i18n="es">Por qué este modelo, y por qué este momento.</span>
+        </h1>
+        <p class="lede">
+          <span data-i18n="en">Two structural shifts are arriving at the same time: agentic AI has crossed from demo to production, and the creative services market is enormous, fragmented, and exhausted by its old model. Cuadrik sits at the intersection.</span>
+          <span data-i18n="es">Dos cambios estructurales están llegando al mismo tiempo: la IA agéntica cruzó del demo a la producción, y el mercado de servicios creativos es enorme, fragmentado y agotado por su modelo viejo. Cuadrik se ubica en la intersección.</span>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== TWO PILLARS ===================== -->
+<section data-screen-label="02 Pillars">
+  <div class="wrap">
+    <div class="row-head">
+      <div class="label">
+        <div class="eyebrow"><span class="dot"></span>01 · <span data-i18n="en">The convergence</span><span data-i18n="es">La convergencia</span></div>
+      </div>
+      <div>
+        <h2 class="reveal">
+          <span data-i18n="en">Two curves meeting at the right time.</span>
+          <span data-i18n="es">Dos curvas cruzándose en el momento correcto.</span>
+        </h2>
+      </div>
+    </div>
+
+    <div class="pillars reveal">
+      <div>
+        <span class="tag">A · <span data-i18n="en">Agentic AI matured</span><span data-i18n="es">IA agéntica madura</span></span>
+        <h3><span data-i18n="en">Agents can finally do production work.</span><span data-i18n="es">Los agentes por fin pueden hacer trabajo de producción.</span></h3>
+        <p data-i18n="en">Reasoning quality, tool use, multi-step planning, and reliability have crossed the line where a system of agents can carry real creative pipelines end-to-end — drafts, iterations, handoffs, QA — under human creative direction.</p>
+        <p data-i18n="es">La calidad de razonamiento, el uso de herramientas, la planeación multi-paso y la confiabilidad cruzaron la línea donde un sistema de agentes puede llevar pipelines creativos reales de punta a punta — borradores, iteraciones, handoffs, QA — bajo dirección creativa humana.</p>
+        <p data-i18n="en">The question stopped being "can it." It's now "what's the operating model that turns it into a business."</p>
+        <p data-i18n="es">La pregunta dejó de ser "puede". Ahora es "cuál es el modelo operativo que lo convierte en negocio".</p>
+      </div>
+      <div>
+        <span class="tag">B · <span data-i18n="en">A market under pressure</span><span data-i18n="es">Un mercado bajo presión</span></span>
+        <h3><span data-i18n="en">Creative services are huge, fragmented, and tired.</span><span data-i18n="es">Los servicios creativos son enormes, fragmentados y están cansados.</span></h3>
+        <p data-i18n="en">Globally, creative services is one of the largest professional categories — design, web, branding, content, video, marketing. It is fragmented across thousands of agencies and freelancers, and squeezed between rising client expectations and rising talent costs.</p>
+        <p data-i18n="es">Globalmente, los servicios creativos son una de las categorías profesionales más grandes — diseño, web, branding, contenido, video, marketing. Está fragmentado entre miles de agencias y freelancers, y comprimido entre expectativas del cliente que suben y costos de talento que también suben.</p>
+        <p data-i18n="en">It is a market built for the model that just stopped working.</p>
+        <p data-i18n="es">Es un mercado construido para el modelo que justo dejó de funcionar.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== REASONS LIST ===================== -->
+<section data-screen-label="03 Reasons">
+  <div class="wrap">
+    <div class="row-head">
+      <div class="label">
+        <div class="eyebrow"><span class="dot"></span>02 · <span data-i18n="en">Why Cuadrik, specifically</span><span data-i18n="es">Por qué Cuadrik, específicamente</span></div>
+      </div>
+      <div>
+        <h2 class="reveal">
+          <span data-i18n="en">Five reasons we think the bet works.</span>
+          <span data-i18n="es">Cinco razones por las que creemos que la apuesta funciona.</span>
+        </h2>
+      </div>
+    </div>
+
+    <div class="reasons reveal">
+      <div class="reason">
+        <span class="n">01</span>
+        <h3><span data-i18n="en">The engine is the moat</span><span data-i18n="es">El motor es el moat</span></h3>
+        <p>
+          <span data-i18n="en">A single agentic engine, sharpened across every brand and every project, gets more valuable the more it runs. Competitors building one agency at a time can't catch up to a compounding system.</span>
+          <span data-i18n="es">Un único motor agéntico, afilado por cada marca y cada proyecto, gana valor mientras más corre. Quienes construyen una agencia a la vez no pueden alcanzar a un sistema que se compone.</span>
+        </p>
+      </div>
+      <div class="reason">
+        <span class="n">02</span>
+        <h3><span data-i18n="en">Brands beat platforms in creative buying</span><span data-i18n="es">Las marcas le ganan a las plataformas en compra creativa</span></h3>
+        <p>
+          <span data-i18n="en">Buyers of creative work want a specialist they trust — not an AI tool. Wrapping the engine in dedicated agency brands gives the buyer what they actually want, and lets us charge agency prices instead of tool prices.</span>
+          <span data-i18n="es">Los compradores de trabajo creativo quieren un especialista de confianza — no una herramienta de IA. Envolver el motor en marcas-agencia dedicadas le da al comprador lo que en realidad quiere, y nos permite cobrar precios de agencia en lugar de precios de herramienta.</span>
+        </p>
+      </div>
+      <div class="reason">
+        <span class="n">03</span>
+        <h3><span data-i18n="en">Quadratic, not linear</span><span data-i18n="es">Cuadrático, no lineal</span></h3>
+        <p>
+          <span data-i18n="en">Each new brand reuses the engine. The cost of launching brand N+1 is far less than launching brand 1. The portfolio grows faster than the team that operates it.</span>
+          <span data-i18n="es">Cada marca nueva reutiliza el motor. El costo de lanzar la marca N+1 es muy inferior al de lanzar la marca 1. El portafolio crece más rápido que el equipo que lo opera.</span>
+        </p>
+      </div>
+      <div class="reason">
+        <span class="n">04</span>
+        <h3><span data-i18n="en">Two channels per brand</span><span data-i18n="es">Dos canales por marca</span></h3>
+        <p>
+          <span data-i18n="en">Direct-to-client retail builds reputation and margin. Wholesale to other agencies fills capacity efficiently. Together they de-risk demand variance for the engine.</span>
+          <span data-i18n="es">El canal directo al cliente construye reputación y margen. El mayoreo a otras agencias llena la capacidad con eficiencia. Juntos reducen el riesgo de variación de demanda sobre el motor.</span>
+        </p>
+      </div>
+      <div class="reason">
+        <span class="n">05</span>
+        <h3><span data-i18n="en">A holding that has done this before</span><span data-i18n="es">Un holding que ya hizo esto antes</span></h3>
+        <p>
+          <span data-i18n="en">Cuadrik is the fourth pillar inside Galaxy Meta. The holding has built and operated specialized companies across enterprise tech, civic tech, and industrial systems. Cuadrik inherits that operating discipline.</span>
+          <span data-i18n="es">Cuadrik es el cuarto pilar dentro de Galaxy Meta. El holding ha construido y operado compañías especializadas en tech empresarial, tech cívico y sistemas industriales. Cuadrik hereda esa disciplina operativa.</span>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== HONEST PRINCIPLES ===================== -->
+<section data-screen-label="04 Principles">
+  <div class="wrap">
+    <div class="row-head">
+      <div class="label">
+        <div class="eyebrow"><span class="dot"></span>03 · <span data-i18n="en">How we talk to investors</span><span data-i18n="es">Cómo hablamos con inversionistas</span></div>
+      </div>
+      <div>
+        <h2 class="reveal">
+          <span data-i18n="en">What you'll see, and what you won't.</span>
+          <span data-i18n="es">Lo que verás, y lo que no.</span>
+        </h2>
+        <p class="lede reveal" style="margin-top:16px;">
+          <span data-i18n="en">Diligence-grade clarity is the only kind of clarity we're interested in. We'd rather lose a meeting for not being flashy enough than win one on inflated traction.</span>
+          <span data-i18n="es">La única claridad que nos interesa es la de nivel due-diligence. Preferimos perder una junta por no ser suficientemente llamativos que ganarla con tracción inflada.</span>
+        </p>
+      </div>
+    </div>
+
+    <div class="principles reveal">
+      <div class="principle">
+        <span class="tag"><span data-i18n="en">What we share</span><span data-i18n="es">Lo que compartimos</span></span>
+        <h4><span data-i18n="en">Thesis. Model. Architecture. Stage.</span><span data-i18n="es">Tesis. Modelo. Arquitectura. Etapa.</span></h4>
+        <p data-i18n="en">A clear story of the business: how the engine works, how brands sit on top, how the channels feed it, what's built today and what isn't. Under NDA, deeper technical and operational detail.</p>
+        <p data-i18n="es">Una historia clara del negocio: cómo funciona el motor, cómo se montan las marcas, cómo lo alimentan los canales, qué está construido hoy y qué no. Bajo NDA, detalle técnico y operativo más profundo.</p>
+      </div>
+      <div class="principle">
+        <span class="tag"><span data-i18n="en">What we won't fabricate</span><span data-i18n="es">Lo que no inventamos</span></span>
+        <h4><span data-i18n="en">Traction we don't have yet.</span><span data-i18n="es">Tracción que no tenemos aún.</span></h4>
+        <p data-i18n="en">No invented client counts, revenue figures, vanity logos, or testimonials. Cuadrik is early. Stage honesty is a feature; the investor can trust everything else we say because of it.</p>
+        <p data-i18n="es">Sin números de clientes, cifras de ingresos, logos de vanidad ni testimonios inventados. Cuadrik está en etapa temprana. La honestidad de etapa es una característica; el inversionista puede confiar en todo lo demás justo por eso.</p>
+      </div>
+      <div class="principle">
+        <span class="tag"><span data-i18n="en">What we offer</span><span data-i18n="es">Lo que ofrecemos</span></span>
+        <h4><span data-i18n="en">A real conversation.</span><span data-i18n="es">Una conversación real.</span></h4>
+        <p data-i18n="en">A direct call with the team behind the engine — including the parts we're still wrestling with. Investors who like that kind of conversation tend to be a good fit for Cuadrik.</p>
+        <p data-i18n="es">Una llamada directa con el equipo detrás del motor — incluyendo las partes con las que aún estamos peleando. Los inversionistas a quienes les gusta ese tipo de conversación suelen encajar bien con Cuadrik.</p>
+      </div>
+      <div class="principle">
+        <span class="tag"><span data-i18n="en">What we ask</span><span data-i18n="es">Lo que pedimos</span></span>
+        <h4><span data-i18n="en">Investors that think in cycles.</span><span data-i18n="es">Inversionistas que piensan en ciclos.</span></h4>
+        <p data-i18n="en">An engine plus a portfolio of brands is not a one-quarter story. We're looking for capital that thinks in years, not weeks — and that's interested in the compounding side of the model.</p>
+        <p data-i18n="es">Un motor más un portafolio de marcas no es una historia de un trimestre. Buscamos capital que piensa en años, no semanas — y que esté interesado en el lado compuesto del modelo.</p>
+      </div>
+    </div>
+
+    <div style="margin-top:48px; display:flex; gap:14px; flex-wrap:wrap;">
+      <a class="btn" href="contact.html?path=investor">
+        <span data-i18n="en">Open investor contact</span><span data-i18n="es">Abrir contacto para inversionistas</span>
+        <span class="arrow" aria-hidden="true">→</span>
+      </a>
+      <a class="btn ghost" href="model.html">
+        <span data-i18n="en">Read the model</span><span data-i18n="es">Leer el modelo</span>
+        <span class="arrow" aria-hidden="true">→</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="site">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-col">
+        <a class="brand" href="index.html" aria-label="Cuadrik">
+          <span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span><span></span></span>
+          <span>Cuadrik</span>
+        </a>
+        <p style="margin-top:14px; font-size:13.5px; color:var(--ink-soft); max-width:32ch;">
+          <span data-i18n="en">The company that builds and operates autonomous creative agencies. A Galaxy Meta company.</span>
+          <span data-i18n="es">La empresa que construye y opera agencias creativas autónomas. Una compañía de Galaxy Meta.</span>
+        </p>
+        <p style="margin-top:14px;"><span class="status"><span class="dot"></span><span data-i18n="en">Engine in active build</span><span data-i18n="es">Motor en construcción</span></span></p>
+      </div>
+      <div class="foot-col">
+        <h5><span data-i18n="en">The site</span><span data-i18n="es">El sitio</span></h5>
+        <ul>
+          <li><a href="index.html"><span data-i18n="en">Thesis</span><span data-i18n="es">Tesis</span></a></li>
+          <li><a href="model.html"><span data-i18n="en">The Model</span><span data-i18n="es">El modelo</span></a></li>
+          <li><a href="portfolio.html"><span data-i18n="en">Portfolio</span><span data-i18n="es">Portafolio</span></a></li>
+          <li><a href="why-now.html"><span data-i18n="en">Why now</span><span data-i18n="es">Por qué ahora</span></a></li>
+          <li><a href="contact.html"><span data-i18n="en">Contact</span><span data-i18n="es">Contacto</span></a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h5><span data-i18n="en">Holding</span><span data-i18n="es">Holding</span></h5>
+        <ul>
+          <li>Galaxy Meta</li>
+          <li>Galaxy Technology</li>
+          <li>Cartwheel Galaxy</li>
+          <li>Grupo Civik</li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h5><span data-i18n="en">Reach</span><span data-i18n="es">Contacto</span></h5>
+        <ul>
+          <li><a href="contact.html?path=investor"><span data-i18n="en">For investors</span><span data-i18n="es">Para inversionistas</span></a></li>
+          <li><a href="contact.html?path=partner"><span data-i18n="en">For partners</span><span data-i18n="es">Para socios</span></a></li>
+          <li><a href="contact.html?path=talent"><span data-i18n="en">For talent</span><span data-i18n="es">Para talento</span></a></li>
+          <li><a href="mailto:hello@cuadrik.lat">hello@cuadrik.lat</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <div>© <span id="year"></span> Cuadrik · <span data-i18n="en">A Galaxy Meta company</span><span data-i18n="es">Una compañía de Galaxy Meta</span></div>
+      <div>cuadrik.lat</div>
+    </div>
+  </div>
+</footer>
+
+<script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+<script src="assets/site.js"></script>
+</body>
+</html>

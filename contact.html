@@ -1,0 +1,352 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Contact — Cuadrik</title>
+<meta name="description" content="Three doors into Cuadrik: investors, partners, and talent." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600&family=Geist:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="assets/site.css" />
+<style>
+  .doors {
+    border: 1px solid var(--line);
+    background: var(--paper);
+    padding: clamp(24px, 3vw, 40px);
+  }
+  .form-shell {
+    display: grid;
+    grid-template-columns: 1fr 1.4fr;
+    gap: clamp(32px, 5vw, 72px);
+    align-items: start;
+  }
+  @media (max-width: 960px) { .form-shell { grid-template-columns: 1fr; } }
+
+  .what-to-say {
+    border: 1px solid var(--line-soft);
+    background: transparent;
+    padding: 24px 28px;
+    border-radius: 4px;
+    display: grid; gap: 10px;
+  }
+  .what-to-say h5 { font-family: var(--mono); font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted); margin: 0; font-weight: 400; }
+  .what-to-say p  { font-size: 14px; color: var(--ink-soft); line-height: 1.55; margin: 0; }
+  .what-to-say ul { margin: 0; padding-left: 16px; font-size: 13.5px; color: var(--ink-soft); display: grid; gap: 6px; }
+
+  .direct-block {
+    display: grid; gap: 16px;
+    font-size: 14px;
+    color: var(--ink-soft);
+  }
+  .direct-block dl {
+    display: grid; grid-template-columns: 140px 1fr;
+    gap: 8px 16px;
+    margin: 0;
+  }
+  .direct-block dt { font-family: var(--mono); font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); padding-top: 2px; }
+  .direct-block dd { margin: 0; }
+  .direct-block a:hover { color: var(--accent); }
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav-inner">
+    <a class="brand" href="index.html" aria-label="Cuadrik home">
+      <span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span><span></span></span>
+      <span>Cuadrik</span>
+    </a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="index.html"><span data-i18n="en">Thesis</span><span data-i18n="es">Tesis</span></a>
+      <a href="model.html"><span data-i18n="en">The Model</span><span data-i18n="es">El modelo</span></a>
+      <a href="portfolio.html"><span data-i18n="en">Portfolio</span><span data-i18n="es">Portafolio</span></a>
+      <a href="why-now.html"><span data-i18n="en">Why now</span><span data-i18n="es">Por qué ahora</span></a>
+      <a href="contact.html" aria-current="page"><span data-i18n="en">Contact</span><span data-i18n="es">Contacto</span></a>
+    </nav>
+    <div class="nav-right">
+      <div class="lang" role="group" aria-label="Language">
+        <button data-lang="en" class="is-active">EN</button>
+        <button data-lang="es">ES</button>
+      </div>
+      <button class="nav-toggle btn ghost" aria-label="Menu">Menu</button>
+    </div>
+  </div>
+</header>
+
+<section class="page-head no-rule" data-screen-label="01 Head">
+  <div class="wrap">
+    <div class="crumbs"><a href="index.html">Cuadrik</a> / <span data-i18n="en">Contact</span><span data-i18n="es">Contacto</span></div>
+    <div class="row-head" style="margin-bottom:0;">
+      <div class="label">
+        <div class="meta-side">
+          <div><span data-i18n="en">Response time</span><span data-i18n="es">Tiempo de respuesta</span></div>
+          <div><b><span data-i18n="en">~ 3 business days</span><span data-i18n="es">~ 3 días hábiles</span></b></div>
+          <div style="margin-top:12px;"><span data-i18n="en">Direct line</span><span data-i18n="es">Línea directa</span></div>
+          <div><b><a href="mailto:hello@cuadrik.lat">hello@cuadrik.lat</a></b></div>
+        </div>
+      </div>
+      <div>
+        <h1>
+          <span data-i18n="en">Three doors into Cuadrik.</span>
+          <span data-i18n="es">Tres puertas a Cuadrik.</span>
+        </h1>
+        <p class="lede">
+          <span data-i18n="en">Pick the conversation that fits — investor, partner, or talent. The form adapts and we route it to the right person.</span>
+          <span data-i18n="es">Elige la conversación que corresponda — inversionista, socio o talento. El formulario se adapta y lo enrutamos a la persona correcta.</span>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== PATH PICKER + FORM ===================== -->
+<section data-screen-label="02 Form">
+  <div class="wrap">
+    <div class="row-head">
+      <div class="label">
+        <div class="eyebrow"><span class="dot"></span>01 · <span data-i18n="en">Pick a path</span><span data-i18n="es">Elige un camino</span></div>
+      </div>
+      <div>
+        <h2 class="reveal">
+          <span data-i18n="en">Who's writing?</span>
+          <span data-i18n="es">¿Quién escribe?</span>
+        </h2>
+      </div>
+    </div>
+
+    <div class="path-cards reveal" role="tablist">
+      <button class="path-card is-active" data-path="investor" role="tab" aria-selected="true">
+        <span class="tag">01 · <span data-i18n="en">Investor</span><span data-i18n="es">Inversionista</span></span>
+        <h4><span data-i18n="en">For investors</span><span data-i18n="es">Para inversionistas</span></h4>
+        <p>
+          <span data-i18n="en">A conversation about the thesis, the model, the roadmap, and the round.</span>
+          <span data-i18n="es">Una conversación sobre la tesis, el modelo, la hoja de ruta y la ronda.</span>
+        </p>
+      </button>
+      <button class="path-card" data-path="partner" role="tab" aria-selected="false">
+        <span class="tag">02 · <span data-i18n="en">Partner</span><span data-i18n="es">Socio</span></span>
+        <h4><span data-i18n="en">For potential partners</span><span data-i18n="es">Para socios potenciales</span></h4>
+        <p>
+          <span data-i18n="en">Operators who know a creative vertical deeply and could lead a brand on the engine.</span>
+          <span data-i18n="es">Operadores que conocen a fondo un vertical creativo y podrían liderar una marca sobre el motor.</span>
+        </p>
+      </button>
+      <button class="path-card" data-path="talent" role="tab" aria-selected="false">
+        <span class="tag">03 · <span data-i18n="en">Talent</span><span data-i18n="es">Talento</span></span>
+        <h4><span data-i18n="en">For talent</span><span data-i18n="es">Para talento</span></h4>
+        <p>
+          <span data-i18n="en">Builders, designers, and operators who want to work on the engine itself.</span>
+          <span data-i18n="es">Constructores, diseñadores y operadores que quieren trabajar en el motor mismo.</span>
+        </p>
+      </button>
+    </div>
+
+    <div class="form-shell" style="margin-top:48px;">
+      <!-- Contextual side panel -->
+      <aside>
+        <div class="what-to-say">
+          <h5><span data-i18n="en">What to include</span><span data-i18n="es">Qué incluir</span></h5>
+          <p data-i18n="en">A few sentences is enough. We read every note. Detail beats length.</p>
+          <p data-i18n="es">Un par de frases es suficiente. Leemos cada mensaje. El detalle gana al largo.</p>
+          <ul>
+            <li><span data-i18n="en">Who you are and the path you picked</span><span data-i18n="es">Quién eres y el camino que elegiste</span></li>
+            <li><span data-i18n="en">Why Cuadrik specifically — what made you reach out</span><span data-i18n="es">Por qué Cuadrik específicamente — qué te hizo escribir</span></li>
+            <li><span data-i18n="en">What a useful first call looks like for you</span><span data-i18n="es">Cómo se ve una primera llamada útil para ti</span></li>
+          </ul>
+        </div>
+
+        <div class="direct-block" style="margin-top:24px;">
+          <dl>
+            <dt><span data-i18n="en">General</span><span data-i18n="es">General</span></dt>
+            <dd><a href="mailto:hello@cuadrik.lat">hello@cuadrik.lat</a></dd>
+            <dt><span data-i18n="en">Investors</span><span data-i18n="es">Inversionistas</span></dt>
+            <dd><a href="mailto:invest@cuadrik.lat">invest@cuadrik.lat</a></dd>
+            <dt><span data-i18n="en">Partners</span><span data-i18n="es">Socios</span></dt>
+            <dd><a href="mailto:partners@cuadrik.lat">partners@cuadrik.lat</a></dd>
+            <dt><span data-i18n="en">Talent</span><span data-i18n="es">Talento</span></dt>
+            <dd><a href="mailto:talent@cuadrik.lat">talent@cuadrik.lat</a></dd>
+            <dt><span data-i18n="en">Holding</span><span data-i18n="es">Holding</span></dt>
+            <dd>Galaxy Meta · g-meta.tech</dd>
+          </dl>
+        </div>
+      </aside>
+
+      <!-- Form -->
+      <div>
+        <form class="form" novalidate>
+          <input type="hidden" name="path" value="investor" />
+
+          <div class="field">
+            <label for="f-name"><span data-i18n="en">Name</span><span data-i18n="es">Nombre</span></label>
+            <input id="f-name" name="name" type="text" required autocomplete="name" placeholder="Jane Doe" />
+          </div>
+
+          <div class="field">
+            <label for="f-email"><span data-i18n="en">Email</span><span data-i18n="es">Correo</span></label>
+            <input id="f-email" name="email" type="email" required autocomplete="email" placeholder="you@firm.com" />
+          </div>
+
+          <div class="field" data-org-label>
+            <label for="f-org">
+              <span data-i18n="en">Fund / Firm</span>
+              <span data-i18n="es">Fondo / Firma</span>
+            </label>
+            <input id="f-org" name="org" type="text" autocomplete="organization" />
+          </div>
+
+          <div class="field">
+            <label for="f-region"><span data-i18n="en">Region</span><span data-i18n="es">Región</span></label>
+            <select id="f-region" name="region">
+              <option value=""><span>—</span></option>
+              <option value="latam">Latin America</option>
+              <option value="na">North America</option>
+              <option value="eu">Europe</option>
+              <option value="other"><span data-i18n="en">Other</span><span data-i18n="es">Otra</span></option>
+            </select>
+          </div>
+
+          <div class="field full">
+            <label for="f-msg"><span data-i18n="en">Message</span><span data-i18n="es">Mensaje</span></label>
+            <textarea id="f-msg" name="message" required placeholder="…"></textarea>
+          </div>
+
+          <div class="form-actions">
+            <span class="hint">
+              <span data-i18n="en">Routed by selected path</span>
+              <span data-i18n="es">Enrutado por el camino elegido</span>
+            </span>
+            <button class="btn" type="submit">
+              <span data-i18n="en">Send</span><span data-i18n="es">Enviar</span>
+              <span class="arrow" aria-hidden="true">→</span>
+            </button>
+          </div>
+        </form>
+
+        <div class="success" role="status" aria-live="polite">
+          <span class="tag"><span data-i18n="en">Received</span><span data-i18n="es">Recibido</span></span>
+          <h4><span data-i18n="en">Thanks — your note is in.</span><span data-i18n="es">Gracias — tu mensaje entró.</span></h4>
+          <p>
+            <span data-i18n="en">We'll reply from the appropriate inbox within about three business days.</span>
+            <span data-i18n="es">Respondemos desde la bandeja apropiada en aproximadamente tres días hábiles.</span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== HOLDING REASSURE ===================== -->
+<section data-screen-label="03 Holding reassure">
+  <div class="wrap">
+    <div class="row-head">
+      <div class="label">
+        <div class="eyebrow"><span class="dot"></span>02 · <span data-i18n="en">Operating context</span><span data-i18n="es">Contexto operativo</span></div>
+      </div>
+      <div>
+        <h2 class="reveal" style="max-width:18ch;">
+          <span data-i18n="en">You're talking to a holding-backed company.</span>
+          <span data-i18n="es">Estás hablando con una compañía respaldada por un holding.</span>
+        </h2>
+        <p class="lede reveal" style="margin-top:16px;">
+          <span data-i18n="en">Cuadrik operates inside Galaxy Meta. That means corporate governance, legal, finance, and shared services are already in place — Cuadrik can focus on the engine and the portfolio.</span>
+          <span data-i18n="es">Cuadrik opera dentro de Galaxy Meta. Eso significa que el gobierno corporativo, lo legal, lo financiero y los servicios compartidos ya están en su lugar — Cuadrik se enfoca en el motor y el portafolio.</span>
+        </p>
+      </div>
+    </div>
+
+    <div class="holding reveal">
+      <div>
+        <div class="role"><span data-i18n="en">Pillar I</span><span data-i18n="es">Pilar I</span></div>
+        <div class="name">Galaxy Technology</div>
+        <div class="desc"><span data-i18n="en">Enterprise tech</span><span data-i18n="es">Tech empresarial</span></div>
+      </div>
+      <div>
+        <div class="role"><span data-i18n="en">Pillar II</span><span data-i18n="es">Pilar II</span></div>
+        <div class="name">Grupo Civik</div>
+        <div class="desc"><span data-i18n="en">Civic &amp; gov tech</span><span data-i18n="es">Tech cívica y gobierno</span></div>
+      </div>
+      <div>
+        <div class="role"><span data-i18n="en">Pillar III</span><span data-i18n="es">Pilar III</span></div>
+        <div class="name">Cartwheel Galaxy</div>
+        <div class="desc"><span data-i18n="en">Industry &amp; ops</span><span data-i18n="es">Industria y operaciones</span></div>
+      </div>
+      <div class="is-self">
+        <div class="role"><span data-i18n="en">Pillar IV · You're here</span><span data-i18n="es">Pilar IV · Estás aquí</span></div>
+        <div class="name">Cuadrik</div>
+        <div class="desc"><span data-i18n="en">Autonomous creative agencies</span><span data-i18n="es">Agencias creativas autónomas</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="site">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-col">
+        <a class="brand" href="index.html" aria-label="Cuadrik">
+          <span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span><span></span></span>
+          <span>Cuadrik</span>
+        </a>
+        <p style="margin-top:14px; font-size:13.5px; color:var(--ink-soft); max-width:32ch;">
+          <span data-i18n="en">The company that builds and operates autonomous creative agencies. A Galaxy Meta company.</span>
+          <span data-i18n="es">La empresa que construye y opera agencias creativas autónomas. Una compañía de Galaxy Meta.</span>
+        </p>
+        <p style="margin-top:14px;"><span class="status"><span class="dot"></span><span data-i18n="en">Engine in active build</span><span data-i18n="es">Motor en construcción</span></span></p>
+      </div>
+      <div class="foot-col">
+        <h5><span data-i18n="en">The site</span><span data-i18n="es">El sitio</span></h5>
+        <ul>
+          <li><a href="index.html"><span data-i18n="en">Thesis</span><span data-i18n="es">Tesis</span></a></li>
+          <li><a href="model.html"><span data-i18n="en">The Model</span><span data-i18n="es">El modelo</span></a></li>
+          <li><a href="portfolio.html"><span data-i18n="en">Portfolio</span><span data-i18n="es">Portafolio</span></a></li>
+          <li><a href="why-now.html"><span data-i18n="en">Why now</span><span data-i18n="es">Por qué ahora</span></a></li>
+          <li><a href="contact.html"><span data-i18n="en">Contact</span><span data-i18n="es">Contacto</span></a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h5><span data-i18n="en">Holding</span><span data-i18n="es">Holding</span></h5>
+        <ul>
+          <li>Galaxy Meta</li>
+          <li>Galaxy Technology</li>
+          <li>Cartwheel Galaxy</li>
+          <li>Grupo Civik</li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h5><span data-i18n="en">Reach</span><span data-i18n="es">Contacto</span></h5>
+        <ul>
+          <li><a href="contact.html?path=investor"><span data-i18n="en">For investors</span><span data-i18n="es">Para inversionistas</span></a></li>
+          <li><a href="contact.html?path=partner"><span data-i18n="en">For partners</span><span data-i18n="es">Para socios</span></a></li>
+          <li><a href="contact.html?path=talent"><span data-i18n="en">For talent</span><span data-i18n="es">Para talento</span></a></li>
+          <li><a href="mailto:hello@cuadrik.lat">hello@cuadrik.lat</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <div>© <span id="year"></span> Cuadrik · <span data-i18n="en">A Galaxy Meta company</span><span data-i18n="es">Una compañía de Galaxy Meta</span></div>
+      <div>cuadrik.lat</div>
+    </div>
+  </div>
+</footer>
+
+<script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+<script>
+  // Preselect path from ?path= query
+  (function () {
+    const params = new URLSearchParams(location.search);
+    const p = params.get("path");
+    if (!p) return;
+    const card = document.querySelector('.path-card[data-path="' + p + '"]');
+    if (card) {
+      document.querySelectorAll('.path-card').forEach(c => c.classList.remove("is-active"));
+      card.classList.add("is-active");
+      const inp = document.querySelector('[name="path"]');
+      if (inp) inp.value = p;
+    }
+  })();
+</script>
+<script src="assets/site.js"></script>
+</body>
+</html>
